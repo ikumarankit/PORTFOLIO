@@ -1,0 +1,163 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --color-accent: #0d9488;
+  --color-accent-hover: #0f766e;
+  --color-accent-secondary: #0369a1;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  @apply antialiased transition-colors duration-300;
+}
+
+/* Light theme (default) */
+:root {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #f1f5f9;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+  --card-shadow: 0 4px 24px -4px rgba(15, 23, 42, 0.08);
+  --accent: #0d9488;
+  --accent-muted: #14b8a6;
+  --hero-bg: #f8fafc;
+}
+
+/* Dark theme */
+.dark {
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-tertiary: #334155;
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --border-color: #475569;
+  --card-shadow: 0 4px 24px -4px rgba(0, 0, 0, 0.45);
+  --accent: #2dd4bf;
+  --accent-muted: #5eead4;
+  --hero-bg: #0f172a;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* Section container utility */
+.section-container {
+  @apply mx-auto max-w-6xl px-4 sm:px-6 lg:px-8;
+}
+
+.section-heading {
+  @apply mb-4 text-3xl font-bold tracking-tight sm:text-4xl;
+  color: var(--text-primary);
+}
+
+.section-subheading {
+  @apply mb-12 max-w-2xl text-lg;
+  color: var(--text-secondary);
+}
+
+/* Accent text (headings, brand) */
+.gradient-text {
+  color: var(--accent);
+}
+
+/* Primary button */
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3 text-sm font-semibold text-white shadow-md transition-colors;
+  background-color: var(--color-accent);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent-hover);
+}
+
+.dark .btn-primary {
+  background-color: #0d9488;
+}
+
+.dark .btn-primary:hover {
+  background-color: #0f766e;
+}
+
+/* Card base */
+.card {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--card-shadow);
+  @apply rounded-2xl transition-all duration-300;
+}
+
+/* Hero section — solid background */
+.hero-section {
+  background-color: var(--hero-bg);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-tertiary);
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-full;
+  background-color: color-mix(in srgb, var(--accent) 50%, transparent);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--accent);
+}
+
+/* Particle animation */
+@keyframes float-particle {
+  0%,
+  100% {
+    transform: translateY(0) translateX(0);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(-20px) translateX(10px);
+    opacity: 0.8;
+  }
+}
+
+.particle {
+  animation: float-particle 6s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loader-spinner {
+  animation: spin 1.2s linear infinite;
+}
+
+@keyframes loader-fill {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.loader-progress {
+  animation: loader-fill 2s ease-in-out forwards;
+}
