@@ -14,7 +14,6 @@ const socialLinks = [
   { icon: FaGithub, href: 'https://github.com', label: 'GitHub' },
   { icon: FaLinkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
   { icon: FaEnvelope, href: 'mailto:ankitkumar@example.com', label: 'Email' },
-  { icon: FaXTwitter, href: 'https://twitter.com', label: 'Twitter/X' },
 ]
 
 /**

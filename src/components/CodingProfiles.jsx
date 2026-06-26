@@ -70,8 +70,7 @@ function CodingProfiles() {
         <div className="mb-12 text-center">
           <h2 className="section-heading">Coding Profiles</h2>
           <p className="section-subheading mx-auto">
-            My competitive programming and coding platform profiles where I solve
-            problems and sharpen my skills.
+            A collection of coding profiles that reflect my passion for problem-solving and growth.
           </p>
         </div>
 

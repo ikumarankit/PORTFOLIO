@@ -1,36 +1,27 @@
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
-import project1 from '../assets/images/project-sign-language.svg'
-import project2 from '../assets/images/project-chat.svg'
-import project3 from '../assets/images/project-portfolio.svg'
+import project1 from '../assets/images/project-Portfolio.jpeg'
+import project2 from '../assets/images/project-HostelCare.jpeg'
 
 const projects = [
-  {
-    title: 'Two-Way Sign Language Communication System',
-    description:
-      'AI-powered application that converts sign language into text and speech and converts speech into text for easier communication.',
-    tech: ['Python', 'OpenCV', 'Deep Learning'],
-    image: project1,
-    github: 'https://github.com',
-    demo: 'https://example.com',
-  },
-  {
-    title: 'AI Chat Application',
-    description:
-      'Intelligent chatbot application capable of answering user questions.',
-    tech: ['React', 'Node.js', 'AI API'],
-    image: project2,
-    github: 'https://github.com',
-    demo: 'https://example.com',
-  },
   {
     title: 'Portfolio Website',
     description:
       'Responsive portfolio website with animations and interactive design.',
     tech: ['React', 'Tailwind CSS'],
-    image: project3,
-    github: 'https://github.com',
-    demo: 'https://example.com',
+    image: project1,
+    github: 'https://github.com/ikumarankit/PORTFOLIO',
+    demo: 'https://kumarankit-dev-portfolio.vercel.app/',
   },
+  {
+    title: 'HostelCare - Hostel issue management system',
+    description:
+      'HostelCare provides a centralized platform where hostelers can register complaints and track their status in real-time. The system automatically assigns complaints to floor-wise rectors,ensuring that each issue is handled by the appropriate authority.',
+    tech: ['MongoDb', 'Express.js', 'React', 'Tailwind ', 'Node.js'],
+    image: project2,
+    github: 'https://github.com/ikumarankit/HostelCare',
+    demo: 'https://hostel-care-lilac.vercel.app/',
+  },
+
 ]
 
 function Projects() {
@@ -44,11 +35,11 @@ function Projects() {
         <div className="mb-12 text-center">
           <h2 className="section-heading">Projects</h2>
           <p className="section-subheading mx-auto">
-            Selected work spanning AI, full stack development, and modern web design.
+            Turning ideas into practical web applications, one project at a time.
           </p>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-2">
           {projects.map((project) => (
             <article
               key={project.title}

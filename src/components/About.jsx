@@ -1,17 +1,16 @@
-import { HiAcademicCap, HiBriefcase, HiHeart } from 'react-icons/hi'
+import { HiAcademicCap, HiHeart } from 'react-icons/hi'
 
 const cards = [
   {
     icon: HiAcademicCap,
     title: 'Education',
-    content: 'B.Tech in Computer Science & Engineering',
+    type: 'education',
+    details: {
+      college: 'Parul University',
+      course: 'B.Tech in Computer Science & Engineering',
+      cgpa: '8.0 / 10',
+    },
     iconBg: 'bg-blue-600',
-  },
-  {
-    icon: HiBriefcase,
-    title: 'Experience',
-    content: 'Full Stack Projects and AI Applications',
-    iconBg: 'bg-teal-600',
   },
   {
     icon: HiHeart,
@@ -19,7 +18,8 @@ const cards = [
     content: [
       'Full Stack Development',
       'Artificial Intelligence',
-      'Machine Learning',
+      'Reading Books',
+      'Playing Games'
     ],
     iconBg: 'bg-sky-600',
   },
@@ -39,7 +39,7 @@ function About() {
           </p>
         </div>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
           {cards.map((card) => (
             <article
               key={card.title}
@@ -56,7 +56,43 @@ function About() {
               >
                 {card.title}
               </h3>
-              {Array.isArray(card.content) ? (
+              {card.type === 'education' ? (
+                <div className="space-y-3">
+                  <div className="flex items-start gap-2">
+                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-500" />
+                    <div>
+                      <p className="text-xs font-semibold uppercase tracking-wider" style={{ color: 'var(--text-secondary)', opacity: 0.7 }}>
+                        College
+                      </p>
+                      <p className="text-sm font-medium" style={{ color: 'var(--text-primary)' }}>
+                        {card.details.college}
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-500" />
+                    <div>
+                      <p className="text-xs font-semibold uppercase tracking-wider" style={{ color: 'var(--text-secondary)', opacity: 0.7 }}>
+                        Course
+                      </p>
+                      <p className="text-sm font-medium" style={{ color: 'var(--text-primary)' }}>
+                        {card.details.course}
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-500" />
+                    <div>
+                      <p className="text-xs font-semibold uppercase tracking-wider" style={{ color: 'var(--text-secondary)', opacity: 0.7 }}>
+                        CGPA
+                      </p>
+                      <p className="text-sm font-medium" style={{ color: 'var(--text-primary)' }}>
+                        {card.details.cgpa}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ) : Array.isArray(card.content) ? (
                 <ul className="space-y-2">
                   {card.content.map((item) => (
                     <li
@@ -83,3 +119,4 @@ function About() {
 }
 
 export default About
+

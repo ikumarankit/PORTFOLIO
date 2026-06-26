@@ -99,7 +99,7 @@ function Contact() {
     <section
       id="contact"
       className="py-20 sm:py-28"
-      style={{ backgroundColor: 'var(--bg-tertiary)' }}
+      style={{ backgroundColor: 'var(--bg-primary)' }}
     >
       <div className="section-container">
         <div className="mb-12 text-center">

@@ -11,9 +11,9 @@ const particles = Array.from({ length: 20 }, (_, i) => ({
   id: i,
   left: `${Math.random() * 100}%`,
   top: `${Math.random() * 100}%`,
-  size: Math.random() * 4 + 2,
-  delay: Math.random() * 5,
-  duration: Math.random() * 4 + 4,
+  size: Math.random() * 5 + 2,
+  delay: Math.random() * 2,
+  duration: Math.random() * 3 + 3,
 }))
 
 function Hero() {

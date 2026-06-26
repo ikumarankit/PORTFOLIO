@@ -1,11 +1,11 @@
 const skillCategories = [
   {
     title: 'Frontend',
-    skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Angular'],
+    skills: ['HTML', 'CSS', 'Bootstrap', 'Tailwind CSS', 'JavaScript', 'React'],
   },
   {
     title: 'Backend',
-    skills: ['Node.js', 'Express.js'],
+    skills: ['Node.js', 'Express.js', 'EJS', 'JWT authentication'],
   },
   {
     title: 'Database',
@@ -13,15 +13,15 @@ const skillCategories = [
   },
   {
     title: 'Programming',
-    skills: ['Python', 'Java', 'C++'],
+    skills: ['Java', 'JavaScript', 'Python'],
   },
   {
-    title: 'AI/ML',
-    skills: ['Machine Learning', 'Deep Learning', 'OpenCV'],
+    title: 'AIML',
+    skills: ['Machine Learning basic'],
   },
   {
     title: 'Tools',
-    skills: ['Git', 'GitHub', 'VS Code'],
+    skills: ['Git', 'GitHub'],
   },
 ]
 
@@ -36,7 +36,7 @@ function Skills() {
         <div className="mb-12 text-center">
           <h2 className="section-heading">Skills</h2>
           <p className="section-subheading mx-auto">
-            Technologies and tools I work with to build modern applications.
+            Technologies and tools I work with to build modern web applications.
           </p>
         </div>
 
