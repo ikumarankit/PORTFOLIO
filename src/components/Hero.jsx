@@ -1,5 +1,5 @@
 import { FaGithub, FaLinkedin, FaEnvelope, FaDownload } from 'react-icons/fa6'
-import resumePdf from '../assets/masterResume.pdf'
+import resumePdf from '../assets/Resume.pdf'
 
 const socialLinks = [
   { icon: FaGithub, href: 'https://github.com/ikumarankit', label: 'GitHub' },
