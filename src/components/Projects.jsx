@@ -4,15 +4,6 @@ import project2 from '../assets/images/project-HostelCare.jpeg'
 
 const projects = [
   {
-    title: 'Portfolio Website',
-    description:
-      'Responsive portfolio website with animations and interactive design.',
-    tech: ['React', 'Tailwind CSS'],
-    image: project1,
-    github: 'https://github.com/ikumarankit/PORTFOLIO',
-    demo: 'https://kumarankit-dev-portfolio.vercel.app/',
-  },
-  {
     title: 'HostelCare - Hostel issue management system',
     description:
       'HostelCare provides a centralized platform where hostelers can register complaints and track their status in real-time. The system automatically assigns complaints to floor-wise rectors,ensuring that each issue is handled by the appropriate authority.',

@@ -8,7 +8,7 @@ const cards = [
     details: {
       college: 'Parul University',
       course: 'B.Tech in Computer Science & Engineering',
-      cgpa: '8.0 / 10',
+      cgpa: '7.55 / 10',
     },
     iconBg: 'bg-blue-600',
   },
