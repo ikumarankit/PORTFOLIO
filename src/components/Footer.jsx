@@ -103,7 +103,7 @@ function Footer() {
           className="mt-10 border-t pt-8 text-center text-sm"
           style={{ borderColor: 'var(--border-color)', color: 'var(--text-muted)' }}
         >
-          © 2026 Ankit Kumar. All rights reserved.
+          © 2026 Ankit Kumar. All rights reserved  ( :
         </div>
       </div>
     </footer>
