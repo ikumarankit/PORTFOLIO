@@ -1,5 +1,5 @@
 import { FaGithub, FaLinkedin, FaEnvelope, FaDownload } from 'react-icons/fa6'
-import resumePdf from '../assets/resume.pdf'
+import resumePdf from '../assets/Resume.pdf'
 import profileImg from '../assets/images/profile.jpeg'
 
 const socialLinks = [
