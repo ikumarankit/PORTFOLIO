@@ -1,18 +1,34 @@
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
-import project1 from '../assets/images/project-Portfolio.jpeg'
-import project2 from '../assets/images/project-HostelCare.jpeg'
+import project1 from '../assets/images/Wanderlust.png'
+import project2 from '../assets/images/HostelCare.png'
+import project3 from '../assets/images/project-chat.svg'
 
 const projects = [
+  {
+    title: 'Wanderlust - Airbnb Clone',
+    description:
+      'A full-stack property rental platform inspired by Airbnb, featuring property discovery, detailed listings, user authentication, and a responsive modern interface. Built with a focus on smooth user experience, reusable components, and efficient data management.',
+    tech: ['MongoDb', 'Express.js', 'React', 'Tailwind ', 'Node.js', 'EJS'],
+    image: project1,
+    github: 'https://github.com/ikumarankit/Wanderlust-An-Airbnb-Clone'
+  },
   {
     title: 'HostelCare - Hostel issue management system',
     description:
       'HostelCare provides a centralized platform where hostelers can register complaints and track their status in real-time. The system automatically assigns complaints to floor-wise rectors,ensuring that each issue is handled by the appropriate authority.',
-    tech: ['MongoDb', 'Express.js', 'React', 'Tailwind ', 'Node.js'],
+    tech: ['MongoDb', 'Express.js', 'React', 'Tailwind', 'Node.js', 'JWT Authentication', 'R-BAC'],
     image: project2,
     github: 'https://github.com/ikumarankit/HostelCare',
     demo: 'https://hostel-care-lilac.vercel.app/',
   },
-
+  {
+    title: 'Planora - AI Powered Project Management Platform',
+    description:
+      'The AI Powered Project Management Platform is a full-stack web application that helps individuals and teams plan, organize, monitor, and complete software or business projects.',
+    tech: ['MongoDb', 'Express.js', 'React', 'Tailwind ', 'Node.js', 'TypeScript', 'JWT Authentication', 'R-BAC'],
+    image: project3,
+    github: 'https://github.com/ikumarankit/Planora'
+  },
 ]
 
 function Projects() {

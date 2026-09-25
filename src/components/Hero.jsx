@@ -74,7 +74,7 @@ function Hero() {
 
           {/* ── Text Column ── */}
           <div className="order-2 flex flex-col items-center text-center lg:order-1 lg:items-start lg:text-left">
-            <p className="mb-3 text-sm tracking-wider font-bold text-teal-600 uppercase dark:text-teal-400 sm:text-2xl">
+            <p className="mb-3 text-xl tracking-wider font-bold text-teal-600 uppercase dark:text-teal-400 sm:text-2xl gradient-text">
               Hello, I&apos;m
             </p>
 
